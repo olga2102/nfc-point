@@ -1,0 +1,27 @@
+.form {
+  position: relative;
+}
+
+.form__input {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 10px 0 10px 50px;
+    width: 100%;
+    border: 1px solid $light-grey;
+    border-radius: 30px;
+  }
+}
+
+.form__label {
+  font-size: 20px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: $light-grey;
+    transform: translate(50%, -50%);
+  }
+}

@@ -1,0 +1,68 @@
+.toggle {
+  @include button-reset;
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-left: auto;
+    width: 23px;
+    height: 23px;
+
+    &--open {
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 18px;
+        height: 3px;
+        background-color: $green-blue;
+        border-radius: 15%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        // width: 23px;
+        // height: 4px;
+        // position: absolute;
+        // top: 35%;
+        // right: 50%;
+        // transform: translate(50%, 0);
+        // background-color: $green-blue;
+        // box-shadow: 0 10px 0 0 $green-blue, 0 20px 0 0 $green-blue;
+        width: 23px;
+        height: 23px;
+        border-top: 3px solid $green-blue;
+        border-bottom: 3px solid $green-blue;
+        border-radius: 10%;
+      }
+    }
+
+  &--close {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: $green-blue;
+      right: 25%;
+      top: 50%;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

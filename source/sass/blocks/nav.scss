@@ -1,0 +1,17 @@
+.nav {
+  @media (min-width: $desktop-width) {
+    width: 70%;
+  }
+}
+
+.nav__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav__link {
+  color: $black;
+  font-weight: bold;
+}
