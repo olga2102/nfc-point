@@ -1,0 +1,50 @@
+.info {
+  margin-bottom: 20px;
+}
+
+.info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 68% 30%;
+    grid-template-rows: auto auto;
+    gap: 10px 20px;
+  }
+}
+
+.ifo__shop {
+  width: 100%;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+
+.info__technologies {
+  width: 49%;
+  margin-right: 2%;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    width: auto;
+  }
+}
+
+.shop__services {
+  width: 45%;
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: auto;
+  }
+}

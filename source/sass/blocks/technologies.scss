@@ -1,0 +1,25 @@
+.technologies {
+  padding: 30px 20px;
+  color: $white;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.technologies__text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.technologies__title {
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+
+.technologies__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: $white;
+}
+

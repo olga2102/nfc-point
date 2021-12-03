@@ -2,15 +2,15 @@
   min-width: 360px;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 10px;
 
   @media (min-width: $tablet-width) {
     min-width: 620px;
-    padding: 0 45px;
+    padding: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 940px;
-    padding: 0 100px;
   }
 }
 

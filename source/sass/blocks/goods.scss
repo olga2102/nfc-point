@@ -1,0 +1,135 @@
+.goods__list {
+  @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.goods__item {
+  position: relative;
+  padding: 30px 25px;
+  background-color: $grey;
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 25px;
+    min-height: 82px;
+  }
+
+  &--mark {
+    @media (min-width: $desktop-width) {
+      width: 21%;
+    }
+  }
+
+  &--sets {
+    @media (min-width: $desktop-width) {
+      width: 34%;
+    }
+  }
+
+  &--notebook {
+    @media (min-width: $desktop-width) {
+      width: 39%;
+    }
+  }
+
+  &--bluetooth {
+    @media (min-width: $desktop-width) {
+      width: 34%;
+    }
+  }
+
+  &--tools {
+    @media (min-width: $desktop-width) {
+      width: 39%;
+    }
+  }
+
+  &--print {
+    @media (min-width: $desktop-width) {
+      width: 21%;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    width: 100px;
+    content: "";
+    z-index: 1;
+    background-repeat: no-repeat;
+  }
+
+  &--tools::after {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -75%);
+    height: 90px;
+    background-image: url("../img/tool.png");
+  }
+
+  &--bluetooth::after {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 70px;
+    background-image: url("../img/bluetooth.png");
+  }
+
+  &--sets::after {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 66px;
+    background-image: url("../img/sets.png");
+  }
+
+  &--print::after {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -45%);
+    width: 90px;
+    height: 100px;
+    background-image: url("../img/print.png");
+  }
+
+  &--notebook::after {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -45%);
+    width: 107px;
+    height: 100px;
+    background-image: url("../img/notebook.png");
+  }
+
+  &--mark::after {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -40%);
+    width: 107px;
+    height: 100px;
+    background-image: url("../img/mark.png");
+  }
+}
+
+.goods__link {
+  font-weight: bold;
+  color: black;
+}
+
+.goods__title {
+  margin: 0;
+}
