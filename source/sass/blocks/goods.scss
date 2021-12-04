@@ -1,5 +1,13 @@
+.goods {
+  margin-bottom: 20px
+}
+
 .goods__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -62,6 +70,7 @@
   &--print {
     @media (min-width: $desktop-width) {
       width: 21%;
+      max-width: 250px;
     }
   }
 
@@ -76,8 +85,8 @@
   &--tools::after {
     right: 0;
     top: 50%;
-    transform: translate(0, -75%);
-    height: 90px;
+    transform: translate(0, -60%);
+    height: 87px;
     background-image: url("../img/tool.png");
   }
 
@@ -101,26 +110,26 @@
     right: 0;
     top: 50%;
     transform: translate(0, -45%);
-    width: 90px;
-    height: 100px;
+    width: 74px;
+    height: 81px;
     background-image: url("../img/print.png");
   }
 
   &--notebook::after {
     right: 0;
     top: 50%;
-    transform: translate(0, -45%);
+    transform: translate(-15%, -45%);
     width: 107px;
-    height: 100px;
+    height: 75px;
     background-image: url("../img/notebook.png");
   }
 
   &--mark::after {
     right: 0;
     top: 50%;
-    transform: translate(0, -40%);
-    width: 107px;
-    height: 100px;
+    transform: translate(0, -55%);
+    width: 80px;
+    height: 72px;
     background-image: url("../img/mark.png");
   }
 }
@@ -132,4 +141,12 @@
 
 .goods__title {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }

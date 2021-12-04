@@ -1,0 +1,27 @@
+.navigation {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.navigation__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 130px;
+}
+
+.navigation__link {
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.navigation__item {
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+}

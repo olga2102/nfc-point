@@ -1,0 +1,28 @@
+.representation {
+  padding: 5px 12%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.representation__title {
+  margin: 0 0 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.representation__subtitle {
+  margin: 0 0 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.representation__text {
+  margin: 0;
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    line-height: 13px;
+  }
+}

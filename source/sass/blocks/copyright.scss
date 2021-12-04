@@ -1,0 +1,20 @@
+.copyright__img {
+  margin: 0 auto;
+}
+
+.copyright__text {
+  margin: 15px 0 15px;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin: 5px 0;
+    line-height: 13px;
+  }
+}
+
+.copyright__link {
+  font-size: 10px;
+  color: $light-grey;
+  text-decoration: underline;
+}

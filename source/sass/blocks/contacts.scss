@@ -1,0 +1,29 @@
+// .contacts {
+//   padding: 5px 0;
+// }
+
+.contacts__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.contacts__item {
+  line-height: 15px;
+
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+}
+
+.contacts__item .contacts__link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $green-blue;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.contacts__link span {
+  color: black;
+}
