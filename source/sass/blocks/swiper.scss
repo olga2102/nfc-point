@@ -1,0 +1,83 @@
+.swiper-container {
+  // position: relative;
+}
+
+.swiper-container .swiper {
+  @include button-reset;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 0.5px solid $grey;
+  border-radius: 50%;
+  background-color: $white;
+  bottom: 20%;
+  z-index: 10;
+
+  &--prev {
+    left: 10%;
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      bottom: 50%;
+      transform: translate(-50%, 50%);
+    }
+  }
+
+  &--next {
+    right: 65%;
+
+    @media (min-width: $desktop-width) {
+      right: 0%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    top: 50%;
+    right: 50%;
+    cursor: pointer;
+  }
+
+  &--next::before {
+    transform: translate(50%, -50%) rotate(-135deg);
+  }
+
+  &--prev::before {
+    transform: translate(50%, -50%) rotate(45deg);
+  }
+}
+
+// .swiper-container .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+//   padding: 0 0 0 10%;
+//   top: 50%;
+//   // transform: translate(0, 50%);
+//   text-align: left;
+
+//   @media (min-width: $desktop-width) {
+
+//   }
+// }
+
+.swiper-container .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  background-color: $white;
+  opacity: 1;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: $white;
+  opacity: 0.5;
+}
+
+.swiper-contaner {
+  width: 100%;
+  height: 300px;
+}

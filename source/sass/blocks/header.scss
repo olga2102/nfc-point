@@ -1,12 +1,19 @@
 .header {
-  padding: 20px 15px 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 10px;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
+    // width: 100vw;
     flex-direction: column;
+  }
+
+  &--menu-opened {
+    margin-bottom: 180px;
   }
 }
 
@@ -19,18 +26,24 @@
 }
 
 .header__wrapper {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
+
+  &--logo {
+    margin-right: auto;
+  }
 }
 
 .header__catalog {
   display: flex;
-  min-width: 45%;
-  flex-direction: row-reverse;
+  // min-width: 45%;
+  // flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
 
@@ -62,7 +75,7 @@
 }
 
 .header__nav {
-  display: none;
+  position: absolute;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -110,7 +123,9 @@
 }
 
 .header__login {
+  margin-right: 10px;
   font-size: 20px;
+  order: 1;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -120,6 +135,12 @@
 .header__buy {
   display: flex;
   align-items: center;
+  order: -1;
+  margin-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    order: initial;
+  }
 }
 
 .header__phone,
@@ -145,7 +166,7 @@
     left: 10%;
     transform: translate(75%, -35%);
     width: 12px;
-    height: 3px;
+    height: 2px;
     background-color: $white;
     border-radius: 15%;
   }
@@ -174,4 +195,10 @@
 
 .header__form {
   width: 70%;
+  order: 0;
+  margin-right: 10px;
 }
+
+// .header__logo {
+//   margin-right: auto;
+// }

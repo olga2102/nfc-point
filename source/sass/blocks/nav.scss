@@ -1,5 +1,15 @@
 .nav {
+  display: none;
+
+  &--opened {
+    display: block;
+    padding: 10px 0 0;
+    width: calc(100vw - 20px);
+  }
+
   @media (min-width: $desktop-width) {
+    display: block;
+    position: inherit;
     width: 70%;
   }
 }
@@ -7,8 +17,27 @@
 .nav__list {
   @include list-reset;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.nav__item {
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid $grey;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    width: auto;
+  }
 }
 
 .nav__link {

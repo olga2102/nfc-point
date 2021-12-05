@@ -15,10 +15,11 @@
   <link href="fonts/montserrat.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/montserratbold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/montserratmedium.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header container">
     <div class="header__wrapper header__contacts">
       <h1 class="header__title">Интернет магазин NFC меток и оборудования</h1>
       <div class="header__inner">
@@ -28,11 +29,11 @@
         <a class="header__link icon-user-outline header__link--login" href="#">Войти</a>
       </div>
     </div>
-    <div class="header__wrapper">
+    <div class="header__wrapper header__wrapper--logo">
       <a class="header__logo logo">
         <img src="img/logo.png" alt="лого в виде аббревиатуры">
       </a>
-      <nav class="header__nav nav nav--opened">
+      <nav class="header__nav nav">
         <ul class="nav__list nav__list--open">
           <li class="nav__item">
             <a class="nav__link" href="#">
@@ -82,28 +83,40 @@
     <section class="info container">
       <h2 class="visually-hidden">Информация о магазине</h2>
       <div class="info__wrapper">
-        <div class="ifo__shop shop">
+        <div class="info__shop shop">
           <h3 class="visually-hidden">Каталог оборудования</h3>
-          <ul class="shop__list">
-            <li class="shop__item">
+          <div class="shop-swiper swiper-container">
+          <ul class="shop__list swiper-wrapper">
+            <li class="shop__item swiper-slide">
               <a class="shop__link" href="#">
                 <p class="shop__intro">Добро пожаловать</p>
                 <p class="shop__text">В магазин NFC меток и оборудования</p>
               </a>
             </li>
-            <li class="shop__item">
+            <li class="shop__item swiper-slide">
               <a class="shop__link" href="#">
                 <p class="shop__intro">Добро пожаловать</p>
                 <p class="shop__text">В магазин NFC меток и оборудования</p>
               </a>
             </li>
-            <li class="shop__item">
+            <li class="shop__item swiper-slide">
+              <a class="shop__link" href="#">
+                <p class="shop__intro">Добро пожаловать</p>
+                <p class="shop__text">В магазин NFC меток и оборудования</p>
+              </a>
+            </li>
+            <li class="shop__item swiper-slide">
               <a class="shop__link" href="#">
                 <p class="shop__intro">Добро пожаловать</p>
                 <p class="shop__text">В магазин NFC меток и оборудования</p>
               </a>
             </li>
           </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper swiper--prev"></div>
+          <div class="swiper swiper--next"></div>
+        </div>
+
         </div>
         <div class="info__technologies technologies">
           <a class="technologies__link" href="#">
@@ -347,6 +360,10 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/slider.js"></script>
+
 </body>
 
 </html>
