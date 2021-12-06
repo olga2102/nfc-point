@@ -1,7 +1,7 @@
-new Swiper(".shop-swiper", {
+new Swiper(".swiper", {
   navigation: {
-    nextEl: '.swiper--next',
-    prevEl: '.swiper--prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   pagination: {
     el: '.swiper-pagination',
@@ -11,9 +11,6 @@ new Swiper(".shop-swiper", {
     360: {
     slidesPerView: 1,
     },
-    // 940: {
-    //   slidesPerView: 3,
-    //   }
   },
   spaceBetween: 20,
   loop: true,

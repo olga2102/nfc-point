@@ -15,7 +15,8 @@
   <link href="fonts/montserrat.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/montserratbold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/montserratmedium.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body class="page__body">
@@ -85,7 +86,7 @@
       <div class="info__wrapper">
         <div class="info__shop shop">
           <h3 class="visually-hidden">Каталог оборудования</h3>
-          <div class="shop-swiper swiper-container">
+          <div class="shop-swiper swiper">
           <ul class="shop__list swiper-wrapper">
             <li class="shop__item swiper-slide">
               <a class="shop__link" href="#">
@@ -113,8 +114,8 @@
             </li>
           </ul>
           <div class="swiper-pagination"></div>
-          <div class="swiper swiper--prev"></div>
-          <div class="swiper swiper--next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
         </div>
@@ -360,7 +361,8 @@
       </div>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <script src="js/menu.js"></script>
   <script src="js/slider.js"></script>
 

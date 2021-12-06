@@ -1,39 +1,14 @@
-.swiper-container {
-  // position: relative;
-}
-
-.swiper-container .swiper {
-  @include button-reset;
-  position: absolute;
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
   width: 35px;
   height: 35px;
-  border: 0.5px solid $grey;
   border-radius: 50%;
   background-color: $white;
+  top: 80%;
   bottom: 20%;
   z-index: 10;
 
-  &--prev {
-    left: 10%;
-
-    @media (min-width: $desktop-width) {
-      left: 0;
-      bottom: 50%;
-      transform: translate(-50%, 50%);
-    }
-  }
-
-  &--next {
-    right: 65%;
-
-    @media (min-width: $desktop-width) {
-      right: 0%;
-      bottom: 50%;
-      transform: translate(50%, 50%);
-    }
-  }
-
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     width: 10px;
@@ -44,40 +19,54 @@
     right: 50%;
     cursor: pointer;
   }
+}
 
-  &--next::before {
-    transform: translate(50%, -50%) rotate(-135deg);
+.swiper .swiper-button-prev {
+  left: 10%;
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
   }
 
-  &--prev::before {
+  &::after {
     transform: translate(50%, -50%) rotate(45deg);
   }
 }
 
-// .swiper-container .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-//   padding: 0 0 0 10%;
-//   top: 50%;
-//   // transform: translate(0, 50%);
-//   text-align: left;
+.swiper .swiper-button-next {
+  right: 70%;
 
-//   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    right: 0%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+  }
 
-//   }
-// }
+  &::after {
+    transform: translate(50%, -50%) rotate(-135deg);
+  }
+}
 
-.swiper-container .swiper-pagination-bullet {
+.swiper .swiper-pagination {
+  padding: 0 0 0 10%;
+  top: 50%;
+  text-align: left;
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.swiper .swiper-pagination-bullet {
   width: 7px;
   height: 7px;
   background-color: $white;
   opacity: 1;
 }
 
-.swiper-container .swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet-active {
   background-color: $white;
   opacity: 0.5;
-}
-
-.swiper-contaner {
-  width: 100%;
-  height: 300px;
 }
