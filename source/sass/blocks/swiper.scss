@@ -1,16 +1,21 @@
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
+.shop-button {
+  position: absolute;
   width: 35px;
   height: 35px;
-  border-radius: 50%;
   background-color: $white;
-  top: 80%;
-  bottom: 20%;
-  z-index: 10;
+  border-radius: 50%;
+  z-index: 1;
+  top: 75%;
+  transform: translateY(-50%);
+
+  @media (min-width: $desktop-width) {
+    top: 50%;
+  }
+
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 10px;
     height: 10px;
     border-left: 1px solid black;
@@ -19,54 +24,52 @@
     right: 50%;
     cursor: pointer;
   }
+
+  &--prev {
+    left: 10%;
+
+    &::after {
+      transform: translate(50%, -50%) rotate(45deg);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--next {
+    left: 25%;
+
+    &::after {
+      transform: translate(50%, -50%) rotate(-135deg);
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: translate(50%, -50%);
+      left: auto;
+      right: 0;
+    };
+  }
 }
 
-.swiper .swiper-button-prev {
-  left: 10%;
-
-  @media (min-width: $desktop-width) {
-    left: 0;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
-  }
-
-  &::after {
-    transform: translate(50%, -50%) rotate(45deg);
-  }
-}
-
-.swiper .swiper-button-next {
-  right: 70%;
-
-  @media (min-width: $desktop-width) {
-    right: 0%;
-    bottom: 50%;
-    transform: translate(50%, 50%);
-  }
-
-  &::after {
-    transform: translate(50%, -50%) rotate(-135deg);
-  }
-}
-
-.swiper .swiper-pagination {
+.shop-pagination {
+  position: absolute;
   padding: 0 0 0 10%;
   top: 50%;
   text-align: left;
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
-.swiper .swiper-pagination-bullet {
+.shop-pagination .swiper-pagination-bullet {
+  position: relative;
   width: 7px;
   height: 7px;
   background-color: $white;
   opacity: 1;
+  z-index: 10;
 }
 
-.swiper .swiper-pagination-bullet-active {
+.shop-pagination .swiper-pagination-bullet-active {
   background-color: $white;
   opacity: 0.5;
 }
