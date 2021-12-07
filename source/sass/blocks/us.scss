@@ -1,0 +1,43 @@
+.us {
+  margin: 0 0 40px 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+
+  &::before {
+    display: block;
+    margin: 0 0 15px;
+    content: "";
+    width: 100%;
+    height: 245px;
+    background-image: url("../img/us.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.us__title {
+  position: relative;
+  padding: 0 0 10px;
+  margin: 0 0 15px;
+  font-size: 20px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 61px;
+    height: 3px;
+    background-color: $green-blue;
+    border-radius: 10px;
+  }
+}
+
+.us__subtitle {
+  margin: 0 0 15px;
+}
+
+.us__text {
+  font-size: 14px;
+}

@@ -1,0 +1,13 @@
+.partners {
+  margin-bottom: 40px;
+}
+
+.partners__list {
+  @include list-reset;
+}
+
+.partners__link {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}

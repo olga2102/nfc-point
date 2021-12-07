@@ -1,0 +1,34 @@
+.feedback {
+  margin-bottom: 40px;
+  background-color: $green-blue;
+}
+
+.feedback__wrapper {
+  padding: 40px 16% 40px 3%;
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 2% 40px 4%;
+    width: 53%;
+  }
+}
+
+.feedback__qa {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.feedback__text {
+  color: white;
+}
+
+.feedback__link {
+  display: block;
+  padding: 7px 15px;
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 20px;
+  text-align: center;
+}
