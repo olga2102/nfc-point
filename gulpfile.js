@@ -125,7 +125,7 @@ exports.images = images;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/fontello/*.{css}",
+    "source/fontello/*.css",
     "source/img/*.ico",
     "source/img/**/*.{jpg,png,svg}",
   ], {
