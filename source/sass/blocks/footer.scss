@@ -1,10 +1,6 @@
 .footer {
   padding: 10px 0;
   background-color: $grey;
-
-  // @media (min-width: $desktop-width) {
-  //   max-height: 150px;
-  // }
 }
 
 .footer__inner {
@@ -51,7 +47,6 @@
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
-      // width: 30%;
     }
   }
 }

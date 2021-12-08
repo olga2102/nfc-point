@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-left: auto;
     width: 23px;
     height: 23px;
 
@@ -24,14 +23,6 @@
       &::after {
         content: "";
         position: absolute;
-        // width: 23px;
-        // height: 4px;
-        // position: absolute;
-        // top: 35%;
-        // right: 50%;
-        // transform: translate(50%, 0);
-        // background-color: $green-blue;
-        // box-shadow: 0 10px 0 0 $green-blue, 0 20px 0 0 $green-blue;
         width: 23px;
         height: 23px;
         border-top: 3px solid $green-blue;

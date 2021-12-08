@@ -17,14 +17,6 @@ new Swiper('.shop-swiper', {
 });
 
 new Swiper('.youtube-swiper', {
-  // navigation: {
-  //   nextEl: '.shop-button--next',
-  //   prevEl: '.shop-button--prev',
-  // },
-  // pagination: {
-  //   el: '.shop-pagination',
-  //   clickable: true,
-  // },
   breakpoints: {
     360: {
     slidesPerView: 2,
@@ -38,14 +30,6 @@ new Swiper('.youtube-swiper', {
 });
 
 new Swiper('.articles-swiper', {
-  // navigation: {
-  //   nextEl: '.shop-button--next',
-  //   prevEl: '.shop-button--prev',
-  // },
-  // pagination: {
-  //   el: '.shop-pagination',
-  //   clickable: true,
-  // },
   breakpoints: {
     360: {
     slidesPerView: 2,
@@ -59,14 +43,6 @@ new Swiper('.articles-swiper', {
 });
 
 new Swiper('.partners-swiper', {
-  // navigation: {
-  //   nextEl: '.shop-button--next',
-  //   prevEl: '.shop-button--prev',
-  // },
-  // pagination: {
-  //   el: '.shop-pagination',
-  //   clickable: true,
-  // },
   breakpoints: {
     360: {
     slidesPerView: 4,
